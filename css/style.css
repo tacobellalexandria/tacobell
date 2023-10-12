@@ -1,0 +1,68 @@
+h1{
+    color: #9522ce;
+    background-color: pink;
+    font-family: Helvetica,Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#myTitle1{
+    color: blue;
+}
+
+#myTitle2{
+    color: #9522ce;
+}
+
+h6{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    color: rgb(100, 200, 100);
+    font-family: 'Young Serif', serif;
+    font-size: 30px;
+}
+
+.myPara1{
+    color: yellowgreen;
+    text-align: right;
+}
+
+.myPara2{
+    color: rgb(41, 37, 33);
+    text-align: center;
+}
+
+.allPara{
+    font-style: italic;
+    padding: 100px;
+}
+
+#myPara3{
+    color: grey;
+}
+
+a{
+    color: blueviolet;
+    font-size: 30px;
+}
+
+a:hover{
+    color: red;
+
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+#easterisland{
+    text-align: center;
+}
