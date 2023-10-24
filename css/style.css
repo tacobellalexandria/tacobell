@@ -8,6 +8,10 @@ h1{
     text-align: center;
 }
 
+#sketch{
+    background: pink; 
+
+}
 #myTitle1{
     color: blue;
 }
@@ -31,13 +35,13 @@ p{
 
 .myPara1{
     color: yellowgreen;
-    text-align: right;
+    text-align: left;
 }
 
-.myPara2{
+/* .myPara2{
     color: rgb(41, 37, 33);
     text-align: center;
-}
+} */
 
 .allPara{
     font-style: italic;
