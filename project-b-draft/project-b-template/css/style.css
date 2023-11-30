@@ -61,12 +61,11 @@ body {
 }
 
 
-
-  canvas{
-    
-    margin-left: 200px;
-
-  }
+canvas{
+  padding: 0;
+  margin-left: 200px;
+}
+  
 
 
 body,
@@ -83,4 +82,6 @@ p {
 
 #canvasContainer {
   display: block;
+  margin-left: 200px;
+  
 }
