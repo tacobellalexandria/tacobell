@@ -63,8 +63,9 @@ body {
 
 
   canvas{
-    padding-left: 200px;
-    padding-right: auto;
+    
+    margin-left: 200px;
+
   }
 
 
