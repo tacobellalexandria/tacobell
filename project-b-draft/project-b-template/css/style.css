@@ -4,22 +4,29 @@ body {
 }
 #box1{
  background-color: lightgreen;
- border-style: dashed;
+ border-style: groove;
   border-width: 5px;
   font-size:3rem ;
+  font-style: inherit;
+  font-family: fantasy;
+  font-display: bold;
   padding: 0.5em; 
   text-align: center;
+  margin-top: 20px;
+  padding-top: 0.5em;
 }
 
 #box2{
-  background-color: darkseagreen;
-  height: 50px;
+  background-color: rgb(183, 229, 183);
+  height: 80px;
   width:800px;
-  border: solid green;
+  border-style: groove;
   border-width: 3px;
   font-size: large;
   padding: 0.5em;
   margin: 40px;
+  text-align: center;
+  font-family: fantasy;
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,6 +41,8 @@ body {
   font-style: oblique;
   padding: 0.5em;
   margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 #box3 img {
@@ -51,6 +60,12 @@ body {
   border-style: groove;
 }
 
+
+
+  canvas{
+    padding-left: 200px;
+    padding-right: auto;
+  }
 
 
 body,

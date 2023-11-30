@@ -13,7 +13,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1500, 1000);
+  createCanvas(1500, 1500);
   //image(img, 0, 0, 800, 600);
   
   //thePlace = new Place(width/2, height/2);
