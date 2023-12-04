@@ -1,19 +1,22 @@
 let img;
 //let thePlace;
 let places= [];
+let margin;
 
 function preload() {
   img = loadImage("images/easter island/EAIsland.jpg");
-  places.push( new Place(282,136, 'images/easter island/vulcan.jpg'));
-  places.push( new Place(124,365, 'images/easter island/hangaroa.jpg' ))
-  places.push( new Place(309,426, 'images/easter island/vaihu.jpg' ));
-  places.push( new Place(413,362, 'images/easter island/oroi.jpg' ));
-  places.push( new Place(512,312,'images/easter island/hatuhi.jpg'));
-  places.push( new Place(672,252,'images/easter island/poike.jpg'));
+  margin = windowWidth/4;
+  places.push( new Place(282,136, 'images/easter island/vulcan.jpg', 'volcano'));
+  places.push( new Place(124,365, 'images/easter island/hangaroa.jpg', 'Hang Roa' ));
+  places.push( new Place(309,426, 'images/easter island/vaihu.jpg', 'Vai Hu'));
+  places.push( new Place(413,362, 'images/easter island/oroi.jpg' , 'Oroi'));
+  places.push( new Place(512,312,'images/easter island/hatuhi.jpg', 'Hatu Hi'));
+  places.push( new Place(672,252,'images/easter island/poike.jpg', 'Poike'));
 }
 
 function setup() {
-  createCanvas(1500, 1500);
+  let canvas = createCanvas(windowWidth, img.height+50);
+  canvas.parent('sketch-container');
   //image(img, 0, 0, 800, 600);
   
   //thePlace = new Place(width/2, height/2);
@@ -30,7 +33,8 @@ function setup() {
 
 function draw() {
   background('white');
-  image(img, 0, 0, 800, 600);
+  image(img, margin, 0, 800, 600);
+
   
   
   for(let i=0; i< places.length; i++){
@@ -55,15 +59,15 @@ function mouseClicked(){
 }
 
 class Place {
-  constructor(x, y, img) {
-    this.x = x;
+  constructor(x, y, img, text) {
+    this.x = x + margin;
     this.y = y;
     //radius value below
     this.r = 50;
     this.canclick = false;
     this.img= loadImage(img);
     this.drawimage=false;
-   // this.text= text;
+    this.text= text;
   }
 
   hover() {
@@ -90,9 +94,15 @@ class Place {
       
     }else{
       this.pic();
+      textSize(50);
+      stroke(0);
+    
+      fill('white')
+      text(this.text, this.x+55, this.y) ;
     }
     //displaying text
     
+
   }
   
   pic(){

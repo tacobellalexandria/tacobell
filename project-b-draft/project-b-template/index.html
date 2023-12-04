@@ -10,35 +10,59 @@
 
   <script src="js/lib/p5.js"></script> 
   <script src="js/script.js"></script> 
-  <script src="js/lib/p5.sound.js"></script>
+  <!-- <script src="js/lib/p5.sound.js"></script> -->
 </head>
 
 <body>
-  <div id="canvasContainer">
-    <!-- p5 canvas will be appended here! -->
-  </div>
- 
+  <div class = 'content' > 
   <div id= 'box1'> 
-    <h1> Rapa Nui </h1>
-    <p> Easter Island Enigma: an interactive adventure </p>
+    <h1 class  = 'title'>🗺 🗿 Rapa Nui 🗿 🗺 </h1>
+    <p class = 'subtitle'> Easter Island Enigma: an interactive adventure </p>
   </div>
 
-  <div id="box2"> 
-  <h2> Exploring Easter Island</h2>
-  <p> Click the hot spots to explore main sites of the island</p>
-  </div>
+  <div class = 'map'> 
+    <div id="box2"> 
+      <img src="images/easter island/EAMap.jpg" alt="EAmapp"> 
+    </div>
+   
+    <div id="box3"> 
+        <p class = 'text'> Where is Easter Isalnd? <br> <br> - Easter Island, or Rapa Nui is located off the coast of South America's pacific southern cone region. 
+        <br> <br>   <br> Who owns the island?  <br> <br> - The island is officially governed by Chile! Residents speak Spanish and Rapa Nui.
+        <br> <br> <br> What are the iconic statues on Easter Island called? <br> <br> - They're called Moai, in the indigenous Rapa Nui language.
+        </p> 
+    </div>
 
-  <div id="box3"> 
-    <h6> <img src="images/easter island/EAMap.jpg" alt="EAmapp"> </h6>
-    <!--box3 is the parent of box 4-->
-    <div id="box4"> 
-      <h6> 🗿 </h6>
+    <div id="box5"> 
+      <p class = 'text'> Fun fact #1 <br> <br> - There are nearly 900 Moai on the island.
+      <br> <br> <br> Fun fact #2 <br> <br> - The Moai surround the coasts of the island, with most of them facing outland.
+      <br> <br> <br> Fun fact #3 <br><br> - The Moai have bodies, estimated to be around 3 to 11 meters long and averaging 82 tonnes.
+      
+      </p>
     </div>
 
   </div>
 
+  <div id="box4"> 
+    
+    <h2 class = 'subtitle'> Exploring Easter Island </h2>
+    <p class ='instruct'> click the hotspots below to explore sites on the island!</p>
+  </div>
+
+  <div id = 'sketch-container'>
+    <!-- p5 canvas will be appended here! -->
+  </div>
+
+  <!-- <div id="end">
+  </div> -->
+
+  <button id = 'myBtn' onclick="window.location.href='info.html';"> next page 
+  </button>
+
+  </div>
+
   
-  
+
+    
 </body>
 
 </html>

@@ -1,87 +1,278 @@
 html,
 body {
-  height: 100%;
+  /* background: red;  */
+  
+  margin: 0; 
+  padding: 0; 
+}
+
+.content { 
+position: absolute; 
+top: 5%; 
+width: 100%; 
+height: 100%; 
+}
+.title{ 
+  font-size: 80px; 
+}
+
+.subtitle { 
+  font-size: 40px; 
+  text-align: center; 
+}
+
+.instruct{
+  text-align: center;
+  font-size: 40px;
+}
+
+.text{
+  font-size: 15px;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-family: fantasy;
+}
+
+
+
+
+div {
+  display: block; 
 }
 #box1{
- background-color: lightgreen;
- border-style: groove;
+  position: relative;
+  margin-top: 0; 
+  width: 90%; 
+  left: 5%; 
+  background-color: lightgreen;
+  border-style: groove;
   border-width: 5px;
-  font-size:3rem ;
   font-style: inherit;
   font-family: fantasy;
   font-display: bold;
-  padding: 0.5em; 
   text-align: center;
-  margin-top: 20px;
-  padding-top: 0.5em;
 }
 
-#box2{
-  background-color: rgb(183, 229, 183);
-  height: 80px;
-  width:800px;
-  border-style: groove;
-  border-width: 3px;
-  font-size: large;
-  padding: 0.5em;
-  margin: 40px;
-  text-align: center;
-  font-family: fantasy;
-  margin-left: auto;
-  margin-right: auto;
+.map { 
+  position: relative; 
+  width: 100%; 
+  min-height: 40vw; 
 }
-
-#box3{
-  background-color: khaki;
-  height: 300px;
-  width: 300px;
+#box2{  
+  position: absolute; 
+  top: 7%; 
+  bottom: 0;
+  background-color: rgb(92, 192, 235);
+  width: 50%;
+  left: 25%; 
   border-style: double;
+  /* padding-top: 10px; */
   border-width: 3px;
   font-size: medium;
   font-style: oblique;
-  padding: 0.5em;
-  margin: 30px;
+  /* padding: 0.5em;
+  margin: 5% auto;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
+
+  
+
+}
+
+#box2 img {
+  position: absolute; 
+  top: 15%; 
+  width: 74%; 
+  left: 13%; 
   
 }
-#box3 img {
-  width: 100%;
-  padding-top: 3.5em;
+
+#box3{
+  background-color: lightgreen;
+  top: 5%; 
+  left: 5%; 
+  position: absolute; 
+  height: 100%; 
+  width: 18%;
+  border-style: groove;
+  border-width: 3px;
+
+
+ 
+  
+}
+
+#box5{
+  position: absolute; 
+  top: 5%; 
+  right: 5%; 
+  width: 18%; 
+  background-color: lightgreen;
+  height: 100%;
+  border-style: groove;
+  border-width: 3px;
+
+
+
 }
 
 
 #box4{
+  position: relative; 
+  top: 10%; 
+  background-color: rgb(183, 229, 183);
+  min-height: 20vw;
+  width:90%;
+  left: 5% ;
+  
+  border-style: groove;
+  border-width: 3px;
+  font-family: fantasy;
+  
+}
+
+
+#end { 
+  display: relative; 
+  width: 100%; 
+  height:  30%; 
+  background: blue;
+}
+
+.explain1{
+ text-align: center;
+  font-family: fantasy;
+  font-size: 27px;
+}
+
+.explain1p2{
+
+  text-align: center;
+  font-family: fantasy;
+  font-size: 20px;
+  
+}
+.head{
+  font-size: 100px;
+  position: absolute;
+animation-name: spin;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+.left .head{
+  right: 10%;
+}
+
+.right .head{
+  left: 10%;
+}
+
+@keyframes spin{
+  from {transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
+
+.box{
+  margin-top: 10px;
+  width: 75%;
+  
+}
+
+.box.left{
+  margin-left: 0;
+  margin-right: auto;
+  
+}
+
+.box.right{
+  margin-right: 0;
+  margin-left: auto;
+}
+
+
+#wrapper{
+  margin: 7px;
+}
+
+#box10{
   background-color: bisque;
-  width: 100px;
-  height: 100px;
-  font-size: 8rem;
-  position: fixed;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 30px;
+  border-style: groove;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7px;
+}
+
+#box6{
+  background-color: rgb(164, 220, 164);
+  border-style: ridge;
+  max-height: max-content;
+  max-width: max-content;
+  border-style: groove;
+  
+ 
+
+}
+
+#box7{
+  background-color: rgb(164, 220, 164);
+  border-style: ridge;
+  max-height: max-content;
+  max-width: max-content;
+  border-style: groove;
+
+}
+
+#box8{
+  background-color: rgb(164, 220, 164);
+  border-style: ridge;
+  /* max-height: max-content;
+  max-width: max-content; */
+  border-style: groove;
+}
+
+#box9{
+  background-color: rgb(164, 220, 164);
+  border-style: ridge;
+  max-height: max-content;
+  max-width: max-content;
   border-style: groove;
 }
 
 
-canvas{
-  padding: 0;
-  margin-left: 200px;
-}
-  
 
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
   margin: 0;
   padding: 0;
 }
-
-#canvasContainer {
-  display: block;
-  margin-left: 200px;
+.sketch-container{
+  display: relative;
+  width: 90%; 
+  right: 5%; 
+  min-height: 50vw; 
+ 
+}
   
+
+
+
+#myBtn{
+  
+
+  /* margin-top: 1500px; */
+  
+  margin-left: 90%;
+  margin-right: auto;
+  
+
+  font-size: 15px;
+}
+
+#sketch-container{
+  margin-top: 100px;
 }
